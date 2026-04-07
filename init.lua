@@ -4,6 +4,9 @@ require("config.lazy")
 -- Options
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+vim.opt.statuscolumn = "%s %l  "
+
 vim.opt.scrolloff = 6
 vim.opt.wrap = false
 vim.opt.cmdheight = 0

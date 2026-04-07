@@ -10,9 +10,9 @@ return {
       local actions = require("telescope.actions")
       require("telescope").setup({
 	defaults = {
-	  prompt_prefix = '  ',
-	  entry_prefix = '   ',
-	  selection_caret = '  ',
+	  prompt_prefix = '   ',
+	  entry_prefix = '    ',
+	  selection_caret = '   ',
 	  border = false,
 	  preview = false,
 	  mappings = {
