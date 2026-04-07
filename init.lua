@@ -4,9 +4,8 @@ require("config.lazy")
 -- Options
 vim.opt.number = true
 vim.opt.relativenumber = true
-
-vim.opt.statuscolumn = "%s %l  "
-
+vim.opt.signcolumn = "number"
+vim.opt.statuscolumn = "%l  "
 vim.opt.scrolloff = 6
 vim.opt.wrap = false
 vim.opt.cmdheight = 0
@@ -23,3 +22,6 @@ vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find fi
 -- Colors
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
 vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "none" })
+
+-- LSP
+vim.lsp.enable('ts_ls')
