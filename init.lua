@@ -13,6 +13,7 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = false
 vim.opt.clipboard = "unnamedplus"
+vim.opt.completeopt = { 'menuone', 'noselect', 'noinsert' }
 
 -- Keymappings
 local builtin = require("telescope.builtin")
@@ -22,6 +23,10 @@ vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find fi
 -- Colors
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
 vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "none" })
+vim.api.nvim_set_hl(0, 'Pmenu', { fg = '#a292a3', bg = '#353545' })
+vim.api.nvim_set_hl(0, 'PmenuSel', { fg = '#1f1f28', bg = '#c4b28a' })
+vim.api.nvim_set_hl(0, 'PmenuKind', { bg = '#353545', fg = '#8C8C97'  })
+vim.api.nvim_set_hl(0, 'PmenuKindSel', { fg = '#1f1f28', bg = '#c4b28a'  })
 
 -- LSP
 vim.lsp.enable('ts_ls')
