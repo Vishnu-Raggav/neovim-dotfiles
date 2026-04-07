@@ -13,7 +13,9 @@ vim.opt.expandtab = false
 vim.opt.clipboard = "unnamedplus"
 
 -- Keymappings
+local builtin = require("telescope.builtin")
 vim.keymap.set('i', 'jk', '<Esc>', { desc = 'jk to exit out of insert mode' })
+vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find files' })
 
 -- Colors
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
