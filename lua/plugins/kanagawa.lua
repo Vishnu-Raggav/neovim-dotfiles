@@ -23,10 +23,7 @@ return {
 	  TelescopeWindowBorder = { fg = "#ffffff" },
 	  TelescopePromptNormal = { bg = "none" },
 	  TelescopeSelection = { bg = "none", fg = "#c8c093" },
---	  TelescopePromptBorder = { fg = theme.ui.bg_p1, bg = theme.ui.bg_p1 },
 	  TelescopeResultsNormal = { fg = theme.ui.fg_dim, bg = "none" },
---	  TelescopeResultsBorder = { fg = theme.ui.bg_m1, bg = theme.ui.bg_m1 },
---	  TelescopePromptNormal = { bg = "none" }
       }
       end
     })
