@@ -23,6 +23,12 @@ vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find fi
 vim.keymap.set('i', '<C-j>', 'pumvisible() ? "<C-n>" : "<C-j>"', { desc = "remap popup-menu next match", expr = true, noremap = true })
 vim.keymap.set('i', '<C-k>', 'pumvisible() ? "<C-p>" : "<C-k>"', { desc = "remap popup-menu previous match", expr = true, noremap = true })
 
+vim.api.nvim_set_keymap('i', '(', '()<Left>', { desc = "autoclose (", noremap = true })
+vim.api.nvim_set_keymap('i', '[', '[]<Left>', { desc = "autoclose [", noremap = true })
+vim.api.nvim_set_keymap('i', '{', '{}<Left>', { desc = "autoclose {", noremap = true })
+vim.api.nvim_set_keymap('i', '"', '""<Left>', { desc = 'autoclose "', noremap = true })
+vim.api.nvim_set_keymap('i', "'", "''<Left>", { desc = "autoclose '", noremap = true })
+
 -- Colors
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
 vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "none" })
