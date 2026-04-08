@@ -1,6 +1,8 @@
 -- Lazy (Package Manager)
 require("config.lazy")
--- Options vim.opt.number = true
+
+-- Options
+vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "number"
 vim.opt.statuscolumn = "%l  "
@@ -17,6 +19,9 @@ vim.opt.completeopt = { 'menuone', 'noselect', 'noinsert' }
 local builtin = require("telescope.builtin")
 vim.keymap.set('i', 'jk', '<Esc>', { desc = 'jk to exit out of insert mode' })
 vim.keymap.set('n', '<leader>f', builtin.find_files, { desc = 'Telescope find files' })
+
+vim.keymap.set('i', '<C-j>', 'pumvisible() ? "<C-n>" : "<C-j>"', { desc = "remap popup-menu next match", expr = true, noremap = true })
+vim.keymap.set('i', '<C-k>', 'pumvisible() ? "<C-p>" : "<C-k>"', { desc = "remap popup-menu previous match", expr = true, noremap = true })
 
 -- Colors
 vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
