@@ -24,6 +24,10 @@ return {
 	  TelescopePromptNormal = { bg = "none" },
 	  TelescopeSelection = { bg = "none", fg = "#c8c093" },
 	  TelescopeResultsNormal = { fg = theme.ui.fg_dim, bg = "none" },
+
+	  AlphaHeader = { fg = "#c4b28a", bg = "none" },
+	  AlphaButton = { fg = "#76946a", bg = "none" },
+	  AlphaButtonShortcut = { fg = "#a292a3", bg = "none" },
       }
       end
     })
